@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundMe smart</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- section 3 in css -->
+    <style>
+        #fundraiser-category{
+            background-color: #b0d3e2;
+        }
+        .category-card {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .category-card img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .title{
+            color: brown;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header 1 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-bottom " style="border: 2px dashed brown; padding:1px;">
+            <a class="nav-link" href="#"><img src="./assets/images/Media (1).png" alt="FundMeSmart Logo" height="30" style="margin-left: 30px; margin-top: 0;"></a>
+            <div class="vl" style="border: 1px solid brown; height: 50px; margin-left:5px;"></div>
+            <div>
+                <i class="fa-brands fa-apple" style="font-size: 30px; margin-left: 18px; margin-bottom: 0;"></i>
+                <i class="fa-solid fa-robot" style="font-size: 24px; margin-left: 18px; margin-bottom: 0;"></i>
+                <p class="p3" style="margin-left: 18px; font-size: 12px;">Get Our Apps</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav" style="margin-right: 40px;">
+                    <div class="a1">
+                        <p class="p1">WHY FUNDRAISE</p>
+                        <p class="p2">With FundMeSmart.com</p>
+                    </div>
+                    <div class="vl h-sm-10 mx-sm-2 my-md-2" style="border: 1px solid brown;margin-right: 10px;"></div>
+                    <div class="a2">
+                        <p class="p1">BECOME A MERCHANT SPONSOR</p>
+                        <p class="p2">Let's Do It</p>
+                    </div>
+                </div>
+                <form class="form-inline ml-auto" style="margin-right: 70px;">
+                    <button class="btn btn-primary my-2 my-sm-0 mr-2" style="width:200px; height: 40px;"><i class="fa-solid fa-pen-to-square"></i> Start a campaign</button>
+                    <button class="btn btn-black my-2 my-sm-0" type="button" style="background-color: brown;color:white;">Sign up</button>
+                    <button class="btn btn-primary my-2 my-sm-0" type="button"style="color:white;">Sign in</button>
+                </form>
+            </div>
+        </nav>
+        <div class="bg">
+            <div class="central">
+                <h1 class="country">"Every Contribution Counts, Every Cause Matters."</h1>
+                <button class="btn btn-primary mt-3">Start a FundMeSmart Campaign</button>
+            </div>
+        </div>
+    </header>
+    <!-- section 2 -->
+    <section>
+        <div class="fundme">
+            <div class="smarts">
+                <h2 class="campaign">Recent Campaigns</h2>
+                <div class="vl1">|||||||||||||||||||</div>
+            </div>
+            <div class="usa-fundme">
+                <img src="./assets/images/mountains-8497575_640.jpg"  alt="USA">
+                <div class="card">
+                    <h5 class="usaclub"><i class="bi bi-send-fill"></i> Baseball USA Club</h5>
+                    <h3 class="help">Help us to get more atheletes on field</h3>
+                    <p class="my">My daughter,jordan, started asking me why  her dolly don't look just like her when she was four years old. We had just purchased her first Bitty Bady from Chicago's American Girl Store.</p>
+                    <div class="raised">
+                        <p>$1125 USD raised</p>
+                        <p>113%</p>
+                    </div>
+                    <progress id="USA" value="70" max="113"></progress>
+                    <div class="supporter">
+                        <h3 class="support"><i class="bi bi-person-fill"></i> 32.3k supporter</h3>
+                        <h3 class="child"><i class="bi bi-pencil-fill"></i>  childer rights</h3>
+                        <h3 class="comments"><i class="bi bi-pencil-square"></i> 12 comments</h3>
+                        <img src="./assets/images/staff-1.jpg" alt="staff">
+                    </div>
+                </div>
+            </div>
+            <div id="thumbnailCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center" style="width: 440px; height: 100px; justify-content: space-between; margin-top: 10px; gap: 10px; border-radius: 10px;">
+                            <img src="./assets/images/flower-3402550_640.jpg" alt="flower1">
+                            <img src="./assets/images/flower-7517474_640.jpg" alt="flower2">
+                            <img src="./assets/images/flower-8094368_640.jpg" alt="flower3">
+                            <img src="./assets/images/chicks-8782391_640.jpg" alt="chicks4">
+                            <img src="/assets/images/mountains-8497575_640.jpg" alt="mountains5">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="nature6">
+                            <img src="./assets/images/pexels-pixabay-274422.jpg" alt="pexels-pixabay 7">
+                            <img src="./assets/images/against-light-7572922_1280.jpg" alt="against-light 8">
+                            <img src="./assets/images/parrots-8735074_640.jpg" alt="parrots 9">
+                            <img src="./assets/images/swan-8581483_1280.jpg" alt="swan 10">
+                            <img src="./assets/images/fog-7750811_640.jpg" alt="fog 11">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="nature 12">
+                            <img src="./assets/images/parrots-8735074_640.jpg" alt="parrots 13">
+                            <img src="./assets/images/child-613199_640.jpg" alt="swan 14">
+                            <img src="./assets/images/soccer-players-action-professional-stadium.jpg" alt="fog 15">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="nature 16">
+                            <img src="./assets/images/flower-3402550_640.jpg" alt="flower 17">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center" style="width: 440px; height: 90px; margin-top: 10px; gap: 10px; border-radius: 10px;">
+                            <img src="./assets/images/flower-3402550_640.jpg" alt="1">
+                            <img src="./assets/images/flower-7517474_640.jpg" alt="2">
+                            <img src="./assets/images/flower-8094368_640.jpg" alt="3">
+                            <img src="./assets/images/chicks-8782391_640.jpg" alt="4">
+                            <img src="/assets/images/mountains-8497575_640.jpg" alt="5">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="6">
+                            <img src="./assets/images/pexels-pixabay-274422.jpg" alt="7">
+                            <img src="./assets/images/against-light-7572922_1280.jpg" alt="8">
+                            <img src="./assets/images/parrots-8735074_640.jpg" alt="9">
+                            <img src="./assets/images/swan-8581483_1280.jpg" alt="10">
+                            <img src="./assets/images/fog-7750811_640.jpg" alt="11">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="12">
+                            <img src="./assets/images/parrots-8735074_640.jpg" alt="13">
+                            <img src="./assets/images/child-613199_640.jpg" alt="14">
+                            <img src="./assets/images/soccer-players-action-professional-stadium.jpg" alt="15">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="16">
+                            <img src="./assets/images/flower-7517474_640.jpg" alt="17">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center" style="width: 440px; height: 90px; margin-top: 10px; gap: 10px; border-radius: 10px;">
+                            <img src="./assets/images/flower-3402550_640.jpg" alt="Thumbnail 1">
+                            <img src="./assets/images/flower-7517474_640.jpg" alt="Thumbnail 2">
+                            <img src="./assets/images/flower-8094368_640.jpg" alt="Thumbnail 3">
+                            <img src="./assets/images/chicks-8782391_640.jpg" alt="Thumbnail 4">
+                            <img src="/assets/images/mountains-8497575_640.jpg" alt="Thumbnail 5">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="Thumbnail 6">
+                            <img src="./assets/images/pexels-pixabay-274422.jpg" alt="Thumbnail 7">
+                            <img src="./assets/images/against-light-7572922_1280.jpg" alt="Thumbnail 8">
+                            <img src="./assets/images/parrots-8735074_640.jpg" alt="Thumbnail 9">
+                            <img src="./assets/images/swan-8581483_1280.jpg" alt="Thumbnail 10">
+                            <img src="./assets/images/fog-7750811_640.jpg" alt="Thumbnail 11">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="Thumbnail 12">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="Thumbnail 13">
+                            <img src="./assets/images/parrots-8735074_640.jpg" alt="Thumbnail 14">
+                            <img src="./assets/images/swan-8581483_1280.jpg" alt="Thumbnail 15">
+                            <img src="./assets/images/fog-7750811_640.jpg" alt="Thumbnail 16">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="Thumbnail 17">
+                            <img src="./assets/images/nature-4191369_640.jpg" alt="Thumbnail 18">
+                        </div>
+                    </div>
+                </div>
+            <div class="calculator">
+                <img src="./assets/images/calculate.jpeg" alt="calculator">                
+                <h3 class="Calculated">FundMeSmart Fundraiser Calculator </h3>
+                <i class="bi bi-arrow-right"></i> 
+                <button class="calculate">calculate</button>   
+            </div>
+        </div>
+    </section>
+    <!-- section 3 -->
+     <section id="fundraiser-category" >
+        <div class="container">
+            <h2 class="section-title">Browse fundraisers by category</h2>
+            <p class="title">||||||||||||||||||||||||||||||</p>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 1 (2).png" alt="Bands">
+                    <p>Bands</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 2.png" alt="Baseball">
+                    <p>Baseball</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 03.png" alt="Cheer">
+                    <p>Cheer</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 4.png" alt="Creative">
+                    <p>Creative</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 5.png" alt="Golf">
+                    <p>Golf</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 6.png" alt="Health">
+                    <p>Health</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 7.png" alt="Soccer">
+                    <p>Soccer</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 8.png" alt="Hero">
+                    <p>Hero</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 9.png" alt="Faith">
+                    <p>Faith</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 10.png" alt="School">
+                    <p>School</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 11.png" alt="Softball">
+                    <p>Softball</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-lg-3 category-card">
+                    <img src="./assets/images/Media 12.png" alt="Tennis">
+                    <p>Tennis</p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- section 4 -->
+    <section id="valued">
+        <div class="delivers">
+            <div class="Fundra">
+                <div class="partner">
+                    <h2 class="to">To our Valued Fundraising Partner</h2>
+                    <p class="vertical">|||||||||||||||||||||||||||||||||||||</p>
+                    <p class="your">Support your Danor Community Daliy by defraying the cost of their gift with "Best in class Savings" right in the palm of their hand.23/7/365</p>
+                    <p class="class">Experience Off the Top <sup>TM</sup>and Compound Giving <sup>TM</sup> income streams through the Power of FundMeSmart <sup>TM</sup>.24/7/365. </sup>  </p>
+                </div>
+                <div class="partner">
+                    <h2 class="ours">To Our Valued Supporters</h2>
+                    <p class="vertical">|||||||||||||||||||||||||||||||||</p>
+                    <p class="save">Give and Save Thousands Yearly while helping to raise funds and awareness for a GREAT CAUSE!</p>
+                    <p class="select">Purchase the App and Select your Fundraiser or Participant</p>
+                </div>
+            </div>
+            <div class="better">
+                <h2 class="how">"Supercharged Savings:How FundMeSmart <sup>TM</sup>Delivers Better Value"</h2>
+                <p class="vertical1">||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</p>
+                <div class="avg">
+                    <img src="./assets/images/images1.png" alt="images">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 5 -->
+    <section id="section5">
+        <div class="discover">
+            <h2 class="camp">Discover Fundraising Campaigns Tailored to Your Interests</h2>
+            <p class="tail">||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</p>
+            <div class="lefted">
+                <div class="card-help">
+                    <img src="./assets/images/istockphoto-1474004422-612x612.jpg" alt="players">
+                    <div class="funding">
+                        <h6 class="f1">FUNDING</h6>
+                        <h6 class="a3">ATHLETE</h6>
+                    </div>
+                    <h3 class="get">Help us to get more athelete on field</h3>
+                    <div class="per">
+                        <p class="raise">$ 1,125  USD Raised</p>
+                        <p class="number">113%</p>
+                    </div>
+                    <progress id="files" value="100" max="100"> 32% </progress>
+                    <p class="days"><i class="bi bi-clock-fill"></i> 15 days left</p>
+                </div>
+                <div class="card-help">
+                    <img src="./assets/images/istockphoto-1355861175-612x612.jpg" alt="players">
+                    <div class="funding">
+                        <h6 class="f1">FUNDING</h6>
+                        <h6 class="a1">ATHLETE</h6>
+                    </div>
+                    <h3 class="get">Help us to get more athelete on field</h3>
+                    <div class="per" tyle="font-weight: 600;">
+                        <p class="raise" >$ 1,125  USD Raised</p>
+                        <p class="number">113%</p>
+                    </div>
+                    <progress id="files" value="100" max="100"> 32% </progress>
+                    <p class="days"><i class="bi bi-clock-fill"></i> 15 days left</p>
+                </div>
+                <div class="card-help">
+                    <img src="./assets/images/pexels-photo-463684.webp" alt="players">
+                    <div class="funding">
+                        <h6 class="f1">FUNDING</h6>
+                        <h6 class="a1">ATHLETE</h6>
+                    </div>
+                    <h3 class="get">Help us to get more athelete on field</h3>
+                    <div class="per">
+                        <p class="raise">$ 1,125  USD Raised</p>
+                        <p class="number">113%</p>
+                    </div>
+                    <progress id="files" value="100" max="100"> 32% </progress>
+                    <p class="days"><i class="bi bi-clock-fill"></i> 15 days left</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 6 -->
+    <section id="section6">
+        <div class="why">
+            <h3 class="com">WHY Fundraise with FundMeSmart.com</h3>
+            <p class="with">|||||||||||||||||||||||||||||||||||||||||||||||||</p>
+            <div class="arts">
+                <div class="imaged">
+                    <video width="300px" height="200px" controls style="border: 2px solid blue;">
+                        <source src="./assets/images/WhatsApp Video 2024-07-16 at 11.38.29_d707d6e7.mp4" type="video/mp4">
+                    </video>
+                    <p class="only">The only Fundraise with Five Ongoing Income Streams 24/7/365</p>
+                </div>
+                <div class="five">
+                    <p class="income">FunfMeSmart is the only Fundraising Platform with Five Ongoing income Streams:</p>
+                    <p class="top"> <span class="dot">1</span> Fundraisers receive 100% of Pay it Forward<sup>TM</sup></p>
+                    <p class="top"> <span class="dot">2</span> Fundraisers receive 100% of Kick it Back<sup>TM</sup></p>
+                    <p class="top"> <span class="dot">3</span> Fundraisers receive 50% of the Off the Top<sup>TM</sup></p>
+                    <p class="top"> <span class="dot">4</span> FUndMeSmart<sup>TM</sup>offers Supporter the opportunity to renew with 50% of those Proceeds going to Funfraiser.So you sell the Savings App once and We renew for life!</p>
+                    <p class="top"> <span class="dot">5</span> Merchant Sponsorship:Bring Bussinesses on the App and you get paid</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 7 -->
+    <section id="section7" style="background-color: #b0d3e2;">
+        <div class="universal">
+            <h2 class="head1"><span class="ask"><i class="bi bi-asterisk"></i></span>WHY Fundraise with FundMeSmart.com</h2>
+            <p class="paid">|||||||||||||||||||||||||||||||||||||||||||||||</p>
+            <div class="saving">
+                <div class="apply">
+                    <div class="allowed">
+                        <h3 class="t1">UNIVERSAL FUNDMESMART.COM</h3>
+                        <p class="super">FundMeSmart Brands your cause to Google and Apple.Your supporter touches your cause every time they save.</p>
+                        <progress id="file" value="100" max="100"></progress>
+                    </div>
+                    <div class="allow">
+                        <h4 class="payit">PAY IT FORWARD <sup>TM</sup></h4>
+                        <p class="be">Average yearly savings for Supporters is $1600 this allows them to be more generous! 100% of these proceeds to specifically to your fundraiser.</p>
+                    </div>
+                    <div class="allow">
+                        <h3 class="more">GRATITUDE WALL</h3>
+                        <p class="wall">Recognition Pays! All donations of $50 or more are seen inside the app on the with Gratitude wall <sup>TM</sup></p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src="./assets/images/Media 7-1.png" alt="phone">
+                </div>
+            </div>
+            <h2 class="shop"><span class="shot"><i class="bi bi-asterisk"></i></span>Supporter Shopping Pays</h2>
+            <p class="paid">|||||||||||||||||||||||||||||||||||||||||||</p>
+            <p class="enjoy">Now that you have download the App and Registered on behalf of FundMeSmart.you are free to enjoy ALL the SAVINGS at our many participating merchants partners.</p>
+        </div>
+    </section> 
+    <!-- section 8 -->
+    <section id="section8">
+        <div class="red">
+            <h2 class="back"><span class="asked"><i class="bi bi-asterisk"></i></span>Supporter Shopping Pays</h2>
+            <p class="verticals">||||||||||||||||||||||||||||||||||||</p>
+            <p class="reg">Now that you have download the App and Registered on behalf of FundMeSmart.you are free to enjoy ALL the SAVINGS at our many participating merchants partners.</p>
+            <div class="trending">
+                <img src="./assets/images/media 08.png" alt="media8">
+                <div class="coupon">
+                    <div class="kick" id="bee">
+                        <h3 class="reel">CATEGORIES</h3>
+                        <p class="lastly">To begin,simply choose any of our categories and look inside</p>
+                        <progress id="pro" value="100" max="100"></progress>
+                    </div>
+                    <div class="kick">
+                        <h3 class="reel">REDEEMED COUPON</h3>
+                        <p class="lastly">Lastly,this is what you will do when ready to redeem the coupon on site.</p>
+                    </div>
+                    <div class="kick">
+                        <h3 class="reel">KICK IT BACK <sup>TM</sup></h3>
+                        <p class="lastly">Supporters can save and given in real time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section9 -->
+    <section id="section9" style="background-color: #b0d3e2;">
+        <div class="gitapp">
+            <div class="site">
+                <h3 class="do"><span class="soon"><i class="bi bi-asterisk"></i></span>Redeem Coupon</h3>
+                <p class="mean">||||||||||||||||||||||||||||||||||||||</p>
+                <p class="people">Lasted,this is what you will do when ready to redeem the coupon on site</p>
+                <div class="del">
+                    <div class="india"><img src="./assets/images/Media 9(1).png" alt="Media 9(1)"></div>
+                    <div class="india"><img src="./assets/images/Media (9)(2).png" alt="Media 9(2)"></div>
+                </div>
+            </div>
+            <div class="sidemenu">
+                <h3 class="menus"><span class="as"><i class="bi bi-asterisk"></i></span>SIDE MENU</h3>
+                <P class="MEAN">|||||||||||||||||||||||||||</P>
+                <p class="sidebar">Using the side bar of the App,you can conveniently gift the App or refer the App to any number of people.</p>
+                <img src="./assets/images/media 09.jpg" alt="Media (9)(3)">
+            </div>
+        </div>
+    </section>
+    <!-- section 10 -->
+    <section id="section10" style="background-color: #b0d3e2;">
+       <div class="admin">
+           <h2 class="dash">Admin Dashboard</h2>
+           <p class="act">|||||||||||||||||||||||||||||||</p>
+           <div class="tab">
+               <div class="sold">
+                   <div class="extra">
+                       <div class="card-money" style="padding-top: 30px;">Activity Adminidtrator Fundraiser Details </div>
+                       <div class="card-money" style="padding-top: 30px;">Participant Registration List</div>
+                       <div class="card-money" style="padding-top: 60px;">Total Sales</div>
+                       <div class="card-money" style="padding-top: 60px;">Total Extra Donations </div>
+                   </div>
+                   <div class="extra">
+                       <div class="card-money">Administrator can notify all supporters with one click</div>
+                       <div class="card-money">Administrator can notify all supporters with one click</div>
+                       <div class="card-money" style="padding-top: 60px;">Total Money Raised</div>
+                       <div class="card-money">Total Money Raised Going to Administrator</div>
+                   </div>
+                   <div class="extra">
+                       <div class="card-money"style="padding-top: 60px;">Shows App Sales Goal</div>
+                       <div class="card-money"style="padding-top: 60px;">Apps sold in Real Time</div>
+                       <div class="card-money"style="padding-top: 50px;">Export Participant List</div>
+                       <div class="card-money"style="padding-top: 60px;">Submit to be paid Tab</div>
+                   </div>
+               </div>
+               <div class="list"><img src="./assets/images/Media 10(1).png" alt="Media 10(1)"></div>
+           </div>
+       </div>
+    </section>
+    <!-- section 11 -->
+    <section id="section11" style="background-color: #b0d3e2;">
+        <h3 class="dashboard">Participant Dashboard</h3>
+        <p class="l1">||||||||||||||||||||||||||</p>
+        <div class="tools">
+            <div class="partscode">
+                <img src="./assets/images/Media 11(1).png" alt="media11">
+                <div class="codes">
+                    <p class="participant">Identifies Participant</p>
+                    <p class="participant">Participant Code and Activity</p>
+                </div>
+            </div>
+            <div class="quick">
+                <div class="grouptime">
+                    <h4 class="trainingtools">Training Tools</h4>
+                    <div class="emailfollow">
+                        <div class="success">
+                            <p class="guide">TraininQuick Start Guide to Fundraising Successg Tools</p> 
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Learn About the App through Video</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Sales Training Video</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Sales Tips</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Print Leave Behind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grouptime">
+                    <h4 class="trainingtools">Sales Tools</h4>
+                    <div class="emailfollow">
+                        <div class="success">
+                            <p class="guide">Notification to Supporters</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Action Photo</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Send App Share App</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Email Followups</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grouptime">
+                    <h4 class="trainingtools">Real Time Sales Section</h4>
+                    <div class="emailfollow">
+                        <div class="success">
+                            <p class="guide">Activity Goal,Personal Goal,Apps Sold,Apps Gifted Extra Donations</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Code,Participant Goal,Activity Administartor Activity</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Name of supporter,email,<br>donations</p>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="success">
+                            <p class="guide">Groups totals,Gold,Silver and Bronze Medal Goals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section12 -->
+    <section id="section12">
+        <div class="stories">
+            <h3 class="hopes">Stories of Hope and Resilience</h3>
+            <p class="ground">||||||||||||||||||||||||||||||||||||||||</p>
+            <div class="playground">
+                <img src="./assets/images/Media 12(1).png" alt="mediaimg">
+                <div class="card-and">
+                    <h1 class="community">"Your Generosity Saved Our Community Playground!"</h1>
+                    <p class="months-after">After months of hard work and dedication, we're thrilled to announce the successful restoration of our beloved community playground, through your generous donations and tireless efforts, we've transformed our once neglected space into a vibrant hub for children and families to play, learn, and grow together. Thank you!" - The Community Playground Committee</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- footer 13 -->
+    <footer>
+        <div class="footertags"> 
+            <div class="content">
+                <div class="header">
+                    <h3>Send App To Phone</h3>
+                    <p class="appto" style="color: brown;">|||||||||||||||||||||</p>
+                </div>
+                <button class="btns"><i class="bi bi-share" style="padding-right: 10px;"></i>Send App</button>
+                <button class="btns"><i class="bi bi-share" style="padding-right: 10px;"></i>Share App</button>
+                <div class="refer-friend">
+                    <img src="./assets/images/footer img2.png" alt="Refer a Friend">
+                </div>
+            </div>
+            <div class="footer" style="background-color: rgb(230, 201, 201);">
+                <div class="footer-content">
+                    <div class="left">
+                        <img src="./assets/images/Media (1).png" alt="FundMeSmart">
+                        <p>"Branding your cause to the community just became that much easier. Pick one of our Group Apps that brands to raise funds."</p>
+                    </div>
+                    <div class="middle">
+                        <h4>Contact Us</h4>
+                        <p>3225 Cumberland Blvd.SE Suite 100 Atlanta, Georgia 30339</p>
+                    </div>
+                    <div class="right">
+                        <h4>Find Us On</h4>
+                        <div class="i" style="display:flex; flex-direction: column;">
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="now"> 
+                        <h4>Download Now!</h4>
+                        <div class="playstore">
+                            <a href="#"><img src="./assets/images/footer img 1.png" alt="Google Play"></a>
+                            <a href="#"><img src="./assets/images/footer img3.png" alt="App Store"></a>
+                        </div>
+                    </div>
+                <p class="for">For any queries Email: info@fundmesmart.com</p>
+                </div>
+                <hr style="color: #702828; font-weight: bolder; border-width: 3px;">
+                <p class="copys">copyright c 2017 All Right Reserved by FundMeSmart.Inc Terms of Use/Privancy Policy/About FundMESmart</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--section 1 end-->
+</body>
+</html>
